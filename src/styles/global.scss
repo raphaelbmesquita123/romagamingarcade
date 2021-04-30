@@ -1,0 +1,15 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', 'Arial';
+    list-style: none;
+    text-decoration: none;
+}
+
+.bodyContainer{
+    width: 98.9vw;
+    background-image: linear-gradient(rgba(0,0,0,0.8), rgba(34, 0, 0, 0.8)), url(../../public/head-image/roma-casino.jpg);
+    background-size: cover;
+    background-position: center;
+}
