@@ -6,7 +6,7 @@
 
     .carouselImage{
         display: flex;
-        min-width: 380px;
+        min-width: 350px;
         width:90%;
         max-width: 1200px;
         max-height: 512px;
@@ -17,7 +17,7 @@
         }
 
         @media only screen and(max-width:600px){
-            height: 150px;       
+            height: 140px;       
         }
 
         img{
