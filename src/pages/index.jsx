@@ -22,6 +22,10 @@ export default function Home() {
           </div>
 
           <div className={styles.HomeAboutUsTextImage}>
+            
+            <div>
+              <img src="./content/roma-casino-6.png" alt=""/>
+            </div>
 
             <div>
               <small>Roma Gaming Arcade is one of Limericks main gaming and amusement arcades. It is situated on one of the main streets in Limerick on William street. We have many slot, poker and gaming machines available to you. We also run a daily spin wheel where one lucky customer could win up to €100. We also have many slot and poker machines in the casino.
@@ -33,11 +37,6 @@ export default function Home() {
               So why not drop in sometime when you are passing and feel the experience for yourself. 
               </small>
             </div>
-
-            <div>
-              <img src="./content/roma-casino-6.png" alt=""/>
-            </div>
-
           </div>
         </section>
 
