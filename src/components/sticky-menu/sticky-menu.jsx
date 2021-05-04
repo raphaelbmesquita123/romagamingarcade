@@ -9,7 +9,7 @@ export function StickyMenu () {
     const [checked, setChecked] = useState(false)
     
     return(
-        <div className={styles.StickyMenu} style={{left: checked ? '0' : '-100vw'}}>
+        <div className={styles.StickyMenu} style={{left: checked ? '0' : '-101vw'}}>
             <ul>
                 <div>
                     <a href="#"><li>HOME</li></a>
