@@ -6,10 +6,10 @@ import styles from './sticky-menu.module.scss'
 
 
 export function StickyMenu () {
-    const [checked, setChecked] = useState(true)
+    const [checked, setChecked] = useState(false)
     
     return(
-        <nav className={styles.StickyMenu} style={{left: checked ? '0' : '-100vw'}}>
+        <div className={styles.StickyMenu} style={{left: checked ? '0' : '-100vw'}}>
             <ul>
                 <div>
                     <a href="#"><li>HOME</li></a>
@@ -23,7 +23,7 @@ export function StickyMenu () {
                     <a href="#"><li>CONTACT US</li></a>
                 </div>
 
-                <div className={styles.arrowMenu}>
+                <div className={styles.arrowMenuInside}>
                     <input type="checkbox" id="burger-shower" onClick={() => setChecked(!checked)}/>
 
                     <label htmlFor="burger-shower">
@@ -38,7 +38,7 @@ export function StickyMenu () {
                     </label>
                 </div>
             </ul>
-        </nav>
+        </div>
 
     )
 }

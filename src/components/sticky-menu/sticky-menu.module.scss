@@ -64,7 +64,7 @@
                 }
             }
 
-            .arrowMenu{
+            .arrowMenuInside{
                 display: block;
                 position: absolute;
                 right: 10px;
@@ -99,7 +99,10 @@
     @media only screen and(max-width: 800px){
         ul{ 
             flex-direction: column;
-            
+            .arrowMenuInside{
+
+                left: -20px;
+            }
             div {
 
                 &:nth-child(1){
