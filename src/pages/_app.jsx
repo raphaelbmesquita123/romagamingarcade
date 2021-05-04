@@ -13,7 +13,7 @@ function MyApp({ Component, pageProps }) {
           <HeaderMenu />
         </section>
           <Component {...pageProps} />
-          <HeaderMenu />
+
       </div>
     </ApplicationContextProvider>
   )
