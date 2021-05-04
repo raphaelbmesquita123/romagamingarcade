@@ -7,14 +7,16 @@
     .carouselImage{
         display: flex;
         min-width: 380px;
-        width: 80%;
+        width:90%;
         max-width: 1200px;
+        max-height: 512px;
         overflow-x: hidden;
         
         img{
             position: relative;
             right: 0%;
             width: 100%;
+            
             transition: right 0.5s ease-in-out;
         }
     }
