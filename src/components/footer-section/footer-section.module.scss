@@ -1,0 +1,71 @@
+.footerSection{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: black;
+    
+
+    h2{
+        color: rgb(206, 72, 72);
+    }
+
+    small{
+        color: rgb(117, 117, 117);
+    }
+
+    .footerIcon{
+        color: rgb(117, 117, 117);
+        font-size: 1.2rem;
+        margin-top: 10px;
+    }
+
+    .footerInfo{
+        display: flex;
+        width: 90%;
+        min-width: 380px;
+
+        
+        .footerAboutUs{
+            width: 50%;
+            padding: 30px;
+        }
+        
+        .footerFallowContact{
+            width: 50%;
+            padding: 30px;
+
+            div:last-child{
+                margin-top: 20px;
+            }
+        }
+
+        @media only screen and (max-width: 700px){
+            flex-direction: column;
+
+            .footerAboutUs{
+                width: 100%;
+                padding: 30px 30px 0px 30px;
+            }
+            
+            .footerFallowContact{
+                width: 100%;
+            }
+        }
+        
+    }
+    .footerDeveloper{
+        padding: 20px;
+        width: 90%;
+        text-align: end;
+
+        a{
+            color: rgb(117, 117, 117);
+
+            &:hover{
+                color: rgb(161, 0, 0);
+            }
+        }
+    }
+}

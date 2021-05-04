@@ -13,7 +13,7 @@ export function StickyMenu () {
             <ul>
                 <div>
                     <a href="#"><li>HOME</li></a>
-                    <a href="#"><li>ABOUT US</li></a>
+                    <a href="#aboutUs" onClick={() => setChecked(false)}><li>ABOUT US</li></a>
                     <a href="#"><li>ONLINE GAMING</li></a>
                     <a href="#"><li>OUR GAMING ARCADE</li></a>
                 </div>
