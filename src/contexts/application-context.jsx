@@ -7,7 +7,8 @@ export function ApplicationContextProvider ({ children }) {
 
     return(
         
-        <ApplicationContext.Provider>
+        <ApplicationContext.Provider
+        value={{}}>
 
             { children } 
         </ApplicationContext.Provider>
