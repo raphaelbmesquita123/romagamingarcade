@@ -6,31 +6,38 @@ import styles from './sticky-menu.module.scss'
 
 
 export function StickyMenu () {
-    const [checked, setChecked] = useState(false)
+    const [checked, setChecked] = useState(true)
     
     return(
-        <nav className={styles.StickyMenu} style={{left: checked ? '0px' : '-190px'}}>
+        <nav className={styles.StickyMenu} style={{left: checked ? '0' : '-100vw'}}>
             <ul>
-              <a href="#"><li>HOME</li></a>
-              <a href="#"><li>ABOUT US</li></a>
-              <a href="#"><li>ONLINE GAMING</li></a>
-              <a href="#"><li>OUR GAMING ARCADE</li></a>
-              <a href="#"><li>NEW ARRIVALS</li></a>
-              <a href="#"><li>OUR GALLERY</li></a>
-              <a href="#"><li>CONTACT US</li></a>
+                <div>
+                    <a href="#"><li>HOME</li></a>
+                    <a href="#"><li>ABOUT US</li></a>
+                    <a href="#"><li>ONLINE GAMING</li></a>
+                    <a href="#"><li>OUR GAMING ARCADE</li></a>
+                </div>
+                <div>
+                    <a href="#"><li>NEW ARRIVALS</li></a>
+                    <a href="#"><li>OUR GALLERY</li></a>
+                    <a href="#"><li>CONTACT US</li></a>
+                </div>
+
+                <div className={styles.arrowMenu}>
+                    <input type="checkbox" id="burger-shower" onClick={() => setChecked(!checked)}/>
+
+                    <label htmlFor="burger-shower">
+                        <FontAwesomeIcon icon={faChevronLeft} className={styles.arrowLeftRight}/>
+                    </label>
+                </div>
+
+                <div className={styles.arrowMenuOutSide}>
+                    <input type="checkbox" id="burger-shower" onClick={() => setChecked(!checked)}/>
+                    <label htmlFor="burger-shower">
+                        <FontAwesomeIcon icon={faChevronRight} className={styles.arrowLeftRight}/>
+                    </label>
+                </div>
             </ul>
-
-            <div className={styles.arrowMenu}>
-                <input type="checkbox" id="burger-shower" onClick={() => setChecked(!checked)}/>
-
-                <label htmlFor="burger-shower">
-                    {
-                        checked ? <FontAwesomeIcon icon={faChevronLeft} className={styles.arrowDownUp}/> : <FontAwesomeIcon icon={faChevronRight} className={styles.arrowDownUp}/>
-                    }
-
-                </label>
-            </div>
-
         </nav>
 
     )
