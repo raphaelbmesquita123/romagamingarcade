@@ -1,0 +1,16 @@
+.GamingCard{  
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(88, 24, 0);
+    width: 250px;
+    padding: 10px;
+    margin: 10px;
+    height: 300px;
+    
+    small{
+        margin-top: 10px;
+        color: rgb(141, 141, 141);
+        
+    }
+
+}

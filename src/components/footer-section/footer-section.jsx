@@ -1,6 +1,6 @@
 import styles from './footer-section.module.scss'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faPenFancy } from '@fortawesome/free-solid-svg-icons' 
+import { faFacebookF, faInstagram, faTwitter } from '@fortawesome/free-brands-svg-icons'
 
 export function FooterSection () {
     return(
@@ -14,10 +14,16 @@ export function FooterSection () {
                 <div className={styles.footerFallowContact}>
                     <div>
                         <h2>Fallow us</h2>
-                        <FontAwesomeIcon icon={faPenFancy} className={styles.footerIcon}/>
-                        <FontAwesomeIcon icon={faPenFancy} className={styles.footerIcon}/>
-                        <FontAwesomeIcon icon={faPenFancy} className={styles.footerIcon}/>
-                        
+                        <a href="#">
+                            <FontAwesomeIcon icon={faInstagram} className={styles.footerIcon}/>
+                        </a>
+                        <a href="#">
+                            <FontAwesomeIcon icon={faTwitter} className={styles.footerIcon}/>
+                        </a>
+                        <a href="#">
+                            <FontAwesomeIcon icon={faFacebookF} className={styles.footerIcon}/>
+                        </a>
+   
                     </div>
                     <div>
                         <h2>Contact us</h2>
