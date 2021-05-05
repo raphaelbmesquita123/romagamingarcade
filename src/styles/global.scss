@@ -5,14 +5,16 @@
     font-family: 'Roboto', 'Arial';
     list-style: none;
     text-decoration: none;
-    scroll-behavior: smooth;
     letter-spacing: 1px;
 }
 
+html{
+    scroll-behavior: smooth;
+}
 
 .App{
     background-image: linear-gradient(rgba(0,0,0,0.8), rgba(34, 0, 0, 0.8)), url(../../public/head-image/roma-casino.jpg);
-    background-size: auto;
+    background-size: cover;
     background-position: auto;
     background-repeat: auto;
 
