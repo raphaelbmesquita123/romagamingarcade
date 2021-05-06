@@ -12,9 +12,9 @@ export function StickyMenu () {
         <div className={styles.StickyMenu} style={{left: checked ? '0' : '-101vw'}}>
             <ul>
                 <div>
-                    <a href="#"><li>HOME</li></a>
+                    <a href="#" onClick={() => setChecked(false)}><li>HOME</li></a>
                     <a href="#aboutUs" onClick={() => setChecked(false)}><li>ABOUT US</li></a>
-                    <a href="#"><li>ONLINE GAMING</li></a>
+                    <a href="#onlineGaming" onClick={() => setChecked(false)}><li>ONLINE GAMING</li></a>
                     <a href="#"><li>OUR GAMING ARCADE</li></a>
                 </div>
                 <div>
