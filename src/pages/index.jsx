@@ -79,17 +79,17 @@ export default function Home() {
         <form action="">
           <div>
             <label htmlFor="name" >Name</label>
-            <input type="text" placeholder="Name"/>
+            <input type="text" placeholder="Name" required/>
           </div>
 
           <div>
             <label htmlFor="contact">Contact</label>
-            <input type="text" placeholder="Email or Number"/>
+            <input type="text" placeholder="Email or Number" required/>
           </div>
 
           <div>
             <label htmlFor="message">Message</label>
-            <input type="textarea" placeholder="Drop us a message"/>
+            <input type="textarea" placeholder="Drop us a message" required/>
           </div>
 
           <input type="submit" value="SEND" className={styles.formButton}/>
