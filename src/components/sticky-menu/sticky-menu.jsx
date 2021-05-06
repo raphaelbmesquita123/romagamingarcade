@@ -20,21 +20,18 @@ export function StickyMenu () {
                 <div>
                     <a href="#"><li>NEW ARRIVALS</li></a>
                     <a href="#"><li>OUR GALLERY</li></a>
-                    <a href="#"><li>CONTACT US</li></a>
+                    <a href="#contactUs" onClick={() => setChecked(false)}><li>CONTACT US</li></a>
                 </div>
 
                 <div className={styles.arrowMenuInside}>
-                    <input type="checkbox" id="burger-shower" onClick={() => setChecked(!checked)}/>
-
                     <label htmlFor="burger-shower">
-                        <FontAwesomeIcon icon={faChevronLeft} className={styles.arrowLeftRight}/>
+                        <FontAwesomeIcon icon={faChevronLeft} className={styles.arrowLeftRight}  onClick={() => setChecked(!checked)}/>
                     </label>
                 </div>
 
                 <div className={styles.arrowMenuOutSide}>
-                    <input type="checkbox" id="burger-shower" onClick={() => setChecked(!checked)}/>
                     <label htmlFor="burger-shower">
-                        <FontAwesomeIcon icon={faChevronRight} className={styles.arrowLeftRight}/>
+                        <FontAwesomeIcon icon={faChevronRight} className={styles.arrowLeftRight}  onClick={() => setChecked(!checked)}/>
                     </label>
                 </div>
             </ul>

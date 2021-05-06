@@ -8,15 +8,15 @@
     
 
     h2{
-        color: rgb(206, 72, 72);
+        color: var(--red-500);
     }
 
     small{
-        color: rgb(117, 117, 117);
+        color: var(--gray-500);
     }
 
     .footerIcon{
-        color: rgb(117, 117, 117);
+        color: var(--gray-500);
         font-size: 1.2rem;
         margin-top: 10px;
     }
@@ -42,7 +42,7 @@
                     padding: 10px;
 
                     & :hover{
-                        color: rgb(161, 0, 0);
+                        color: var(--red-400);
                     }
                 }
             }
@@ -72,10 +72,10 @@
         font-size: 0.6rem;
 
         a{
-            color: rgb(117, 117, 117);
+            color: var(--gray-500);
 
             &:hover{
-                color: rgb(161, 0, 0);
+                color: var(--red-500);
             }
         }
     }

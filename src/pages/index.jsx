@@ -73,6 +73,29 @@ export default function Home() {
           </div>
         </section>
 
+        <section className={styles.contactUs} id="contactUs"> 
+        <h1>CONTACT US</h1>
+
+        <form action="">
+          <div>
+            <label htmlFor="name" >Name</label>
+            <input type="text" placeholder="Name"/>
+          </div>
+
+          <div>
+            <label htmlFor="contact">Contact</label>
+            <input type="text" placeholder="Email or Number"/>
+          </div>
+
+          <div>
+            <label htmlFor="message">Message</label>
+            <input type="textarea" placeholder="Drop us a message"/>
+          </div>
+
+          <input type="submit" value="SEND" className={styles.formButton}/>
+        </form>
+        </section>
+
         <FooterSection />
       </section>
 
